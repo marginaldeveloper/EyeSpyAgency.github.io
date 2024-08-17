@@ -188,14 +188,14 @@ a:hover {
     background-clip: content-box, border-box;
     display: inline-block;
     margin-top: 30px;
-    transition: border-color 0.3s ease, transform 0.3s ease; /* Добавление плавного перехода */
+    transition: border-color 0.3s ease, transform 0.3s ease; /* плавный переход типа */
     text-shadow: 0 0 10px #5ac09e, 0 0 20px #5ac09e, 0 0 30px #5ac09e, 0 0 40px #5ac09e;
     animation: glow 2s ease-in-out infinite alternate;
 }
 
 .gradient-border-text:hover {
-    border-color: #5ac09e; /* Появление рамки при наведении */
-    transform: scale(1.05); /* Легкое увеличение текста при наведении */
+    border-color: #5ac09e; 
+    transform: scale(1.05); 
 }
 
 
@@ -318,7 +318,7 @@ a:hover {
 .referral-section {
     display: flex;
     align-items: center;
-    gap: 10px; /* Промежуток между кнопками */
+    gap: 10px; 
 }
 
 .extra-link-btn {
