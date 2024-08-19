@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для арендодателей Авито - EyeSpy Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <div class="container">
+                <div class="profile-header">
+                    <div class="profile-picture">
+                        <img src="logo.png" alt="Profile Picture">
+                    </div>
+                    <div class="profile-info">
+                        <h1>EyeSpy Agency</h1>
+                        <p>Команда специалистов, предлагающая услуги в области OSINT и детективных расследований в интернете.</p>
+                        <a href="index.html" class="referral-btn">Назад на главную</a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="info-section">
+                        <h2>Для арендодателей Авито</h2>
+                        <ul>
+                            <li>EyeSpy Agency поможет вам лучше контролировать арендаторов. Если вы хотите созвониться с гостем до предоплаты, мы можем предоставить его номер телефона по вашему запросу. </li>
+                            <li>Просто в обращении к нам в Telegram укажите имя гостя, и наши специалисты отправят вам его номер в течение 5-10 минут.</li>
+                            <li>Так как мы только открываемся, данная услуга стоит 500 рублей в месяц, а 3 тестовых запроса — бесплатно.</li>
+                            <li>Выплата комиссионных: Комиссионные начисляются после того, как заказ будет полностью выполнен и оплачен.</li>
+                        </ul>
+                        <p class="gradient-border-text">Связь с гостями до предоплаты – это отличная возможность увеличить доход, сотрудничая с нами!</p>
+                        <div class="contacts-section">
+                            <p class="highlight-text">Наши контакты:</p>
+                            <div class="contact-links">
+                                <a href="https://t.me/EyeSpyAgency" target="_blank">
+                                    <img src="telegram_logo.png" alt="Telegram" class="contact-icon"> @EyeSpyAgency
+                                </a>
+                                <a href="https://github.com/17murmuwer" target="_blank">
+                                    <img src="github_logo.png" alt="GitHub" class="contact-icon"> 17murmuwer
+                                </a>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+        document.addEventListener('DOMContentLoaded', () => {
+            barba.init({
+                transitions: [{
+                    name: 'fade-transition',
+                    leave(data) {
+                        return gsap.to(data.current.container, {
+                            opacity: 0,
+                            duration: 0.5
+                        });
+                    },
+                    enter(data) {
+                        return gsap.from(data.next.container, {
+                            opacity: 0,
+                            duration: 0.5
+                        });
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
+</html>
